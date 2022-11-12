@@ -37,6 +37,14 @@ h1:hover {
   transform: translate3d(0, -10px, 82px);
   color: #c00000;
 }
+p{
+  font-size: 2vw;
+  letter-spacing: 0.3rem;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
 
 .slider h2 {
   font-size: 2vw;
@@ -103,6 +111,20 @@ a {
   background: #03dac6;
   transition: all 0.5s ease;
 }
+.nav-tab1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #03dac6;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1vw;
+}
+.nav-tab1:hover {
+  color: #1e1f26;
+  transition: all 0.5s ease;
+}
 
 .nav-tab-slider {
   position: absolute;
@@ -121,59 +143,7 @@ a {
   right: 0;
   z-index: auto;
 }
-.dropdown {
-  float: left;
-  overflow: hidden;
-  border-bottom: 0ch;
-}
 
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: blue;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  border-bottom: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: purple;
-  border-bottom: 0ch;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #9e7878;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-bottom: 0ch;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-family: 'Merriweather', serif;
-  border-bottom: 0ch;
-}
-
-.dropdown-content a:hover {
-  background-color:red;
-  border-bottom: 0ch;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  border-bottom: 0ch;
-}
 @media (min-width: 800px) {
   .nav h1,
   .slider h1 {
@@ -186,11 +156,7 @@ a {
   }
 
   .nav-tab {
-<<<<<<< HEAD
     font-size: 14px;
-=======
-    font-size: 1.5vw;
->>>>>>> shreejeet
   }
 }
 
@@ -207,7 +173,7 @@ a {
   }
 
   .nav-tab {
-    font-size: 1.2vw;
+    font-size: 2vw;
   }
 }
 .background {
