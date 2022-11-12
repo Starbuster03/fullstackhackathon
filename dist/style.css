@@ -95,7 +95,7 @@ a {
   color: #03dac6;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .nav-tab:hover {
@@ -134,8 +134,8 @@ a {
   color: blue;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; 
-  margin: 0; 
+  font-family: inherit;
+  margin: 0;
   border-bottom: 0;
 }
 
@@ -186,7 +186,7 @@ a {
   }
 
   .nav-tab {
-    font-size: 3vw;
+    font-size: 14px;
   }
 }
 
