@@ -78,7 +78,7 @@ a {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: 50px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background: #1e1f26;
   z-index: 10;
@@ -102,8 +102,7 @@ a {
   flex: 3;
   color: #03dac6;
   transition: all 0.5s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1cm;
+  font-size: 1px;
 }
 
 .nav-tab:hover {
@@ -135,6 +134,12 @@ a {
   .slider h1 {
     font-size: 5vw;
   }
+  div.container a{
+    font-size: 1vw;
+  }
+  div.circleBehind a:before, div.circleBehind a:after{
+    font-size: 1vw;
+  }
 
   .nav h2,
   .slider h2 {
@@ -142,15 +147,17 @@ a {
   }
 
   .nav-tab {
-    font-size: 3vw;
+    font-size: 2vw;
+    height: 20px;
   }
 }
 
-@media screen only (min-width: 360px) {
+@media screen only(min-width: 360px) {
   .nav h1,
   .slider h1 {
     font-size: 8vw;
   }
+  
 
   .nav h2,
   .slider h2 {
@@ -160,6 +167,15 @@ a {
 
   .nav-tab {
     font-size: 1.2vw;
+  }
+  div.circleBehind a:before, div.circleBehind a:after{
+    font-size: 1.2vw;
+    height: 20px;
+  }
+  div.container a{
+    height: 20px;
+    font-size: 1vw;
+   
   }
 }
 .background {
@@ -247,3 +263,67 @@ a {
 .loader span:nth-child(22) {
   -webkit-animation-delay: 2.1s;
 }
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+	padding: 20px 80px;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px times new roman; 
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.blue
+{
+    background: #000000;
+}
+
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
