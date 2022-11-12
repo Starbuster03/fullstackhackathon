@@ -1,6 +1,4 @@
-
-
-window.onload = function () {
+window.onload = function() {
   Particles.init({
     selector: ".background"
   });
@@ -9,16 +7,14 @@ const particles = Particles.init({
   selector: ".background",
   color: ["#03dac6", "#ff0266", "#000000"],
   connectParticles: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      options: {
-        color: ["#faebd7", "#03dac6", "#ff0266"],
-        maxParticles: 43,
-        connectParticles: false
-      }
+  responsive: [{
+    breakpoint: 768,
+    options: {
+      color: ["#faebd7", "#03dac6", "#ff0266"],
+      maxParticles: 43,
+      connectParticles: false
     }
-  ]
+  }]
 });
 
 class NavigationPage {
@@ -28,7 +24,7 @@ class NavigationPage {
     this.tabContainerHeight = 70;
     this.lastScroll = 0;
     let self = this;
-    $(".nav-tab").click(function () {
+    $(".nav-tab").click(function() {
       self.onTabClick(event, $(this));
     });
     $(window).scroll(() => {
@@ -43,7 +39,9 @@ class NavigationPage {
     event.preventDefault();
     let scrollTop =
       $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-    $("html, body").animate({ scrollTop: scrollTop }, 600);
+    $("html, body").animate({
+      scrollTop: scrollTop
+    }, 600);
   }
 
   onScroll() {
@@ -95,7 +93,7 @@ class NavigationPage {
     let newCurrentId;
     let newCurrentTab;
     let self = this;
-    $(".nav-tab").each(function () {
+    $(".nav-tab").each(function() {
       let id = $(this).attr("href");
       let offsetTop = $(id).offset().top - self.tabContainerHeight;
       let offsetBottom =
