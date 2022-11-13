@@ -267,11 +267,11 @@ a {
 /* slide-show */
 img{
   max-width: 1000px;
-  height: 500px;
+  height: 450px;
 }
 .slideshow-container {
   max-width: 1000px;
-  max-height: 500px;
+  max-height: 450px;
   position: relative;
   margin: auto;
   background-color: white;
@@ -414,3 +414,15 @@ img{
 .shreejeet{
   margin-left: 50px;
 }
+
+.fa {  
+  padding: 20px;  
+  text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 75px; 
+}
+.fa-instagram {  
+  background: #125688;  
+  color: white;
+}  
