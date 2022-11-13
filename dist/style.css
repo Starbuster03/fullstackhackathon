@@ -346,8 +346,8 @@ img{
 
 .flip-card {
   background-color: black;
-  width: 317px;
-  height: 322px;
+  width: 300px;
+  height: 300px;
   border: 1px solid #f1f1f1;
   /* border-radius: 10%; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
